@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.810.17
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinNativeNavigation.iOS", "XamarinNativeNavigation.iOS\XamarinNativeNavigation.iOS.csproj", "{2EF16B3B-BE64-43B5-9BCC-97608FAA5380}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XamarinNativeNavigation.Droid", "XamarinNativeNavigation.Droid\XamarinNativeNavigation.Droid.csproj", "{85495917-297B-4701-B4AB-BC7124928B0B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|iPhoneSimulator = Debug|iPhoneSimulator
@@ -21,6 +23,14 @@ Global
 		{2EF16B3B-BE64-43B5-9BCC-97608FAA5380}.Debug|iPhone.Build.0 = Debug|iPhone
 		{2EF16B3B-BE64-43B5-9BCC-97608FAA5380}.Release|iPhone.ActiveCfg = Release|iPhone
 		{2EF16B3B-BE64-43B5-9BCC-97608FAA5380}.Release|iPhone.Build.0 = Release|iPhone
+		{85495917-297B-4701-B4AB-BC7124928B0B}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{85495917-297B-4701-B4AB-BC7124928B0B}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{85495917-297B-4701-B4AB-BC7124928B0B}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{85495917-297B-4701-B4AB-BC7124928B0B}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{85495917-297B-4701-B4AB-BC7124928B0B}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{85495917-297B-4701-B4AB-BC7124928B0B}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{85495917-297B-4701-B4AB-BC7124928B0B}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{85495917-297B-4701-B4AB-BC7124928B0B}.Release|iPhone.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
