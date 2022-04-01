@@ -1,6 +1,7 @@
 ﻿using System;
 using Foundation;
 using UIKit;
+using XamarinNativeNavigation.iOS;
 
 namespace NewSingleViewTemplate
 {
@@ -14,6 +15,21 @@ namespace NewSingleViewTemplate
         [Export("scene:willConnectToSession:options:")]
         public void WillConnect(UIScene scene, UISceneSession session, UISceneConnectionOptions connectionOptions)
         {
+            var windowScene = scene as UIWindowScene;
+            if (windowScene == null)
+                return;
+
+            var window = new UIWindow(windowScene);
+            Window = window;
+
+            UIStoryboard storyboard = UIStoryboard.FromName("Main", null);
+            //var introductionVC = storyboard.InstantiateViewController("SecondSBViewController") as SecondSBViewController;
+            var introductionVC = storyboard.InstantiateViewController("ViewController") as ViewController;
+            Window.RootViewController = new UINavigationController(introductionVC);
+            UIApplication.SharedApplication.SetStatusBarStyle(UIStatusBarStyle.LightContent, true);
+            // make the window visible
+            Window.MakeKeyAndVisible();
+
             // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
             // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
             // This delegate does not imply the connecting scene or session are new (see UIApplicationDelegate `GetConfiguration` instead).
